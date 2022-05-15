@@ -65,6 +65,7 @@ button {
   color: inherit;
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 i{
@@ -104,6 +105,11 @@ body.light-theme{
 .screen-sm-hidden{
     display: none;
 }
+
+/* .section{
+    padding-block: 5rem
+} */
+
 /* Header */
 .header{
     background-color: var(--secondary-background-color);
@@ -135,7 +141,7 @@ body.light-theme{
     background-color:var(--secondary-background-color);
     opacity: 0;
     transform: scale(0);
-    transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in;  
 }
 
 .list{
@@ -177,6 +183,32 @@ body.light-theme{
 .light-theme .moon-icon{
     display: block;
 }
+
+.fancy-border{
+    position: relative;
+    overflow: hidden;
+}
+
+.fancy-border::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: var(--gradient-color);
+    background-size: 50% 100%;
+    z-index: 5;
+}
+
+.fancy-border span{
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    background-color: var(--secondary-background-color);
+    padding: .6rem 1.5rem;
+}
+
 /* Header JavaScript Styles */
 .header.activated{
     box-shadow: 0 1px .5rem var(--transparent-light-color);
@@ -268,6 +300,9 @@ body.light-theme{
     opacity: 1;
     transform: scale(1);
 }
+
+
+
 /* Footer */
 .footer{
     background-color: var(--secondary-background-color);
@@ -307,6 +342,7 @@ body.light-theme{
     margin-bottom: var(--margin-sm);
 }
 
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 1rem;
@@ -324,6 +360,39 @@ body.light-theme{
     background: #2e303b;
 }
   
+/*media queries*/ 
+@media screen and (min-width: 700px) {
+    .company-data{
+        order: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu{
+        position: static;
+        width: initial;
+        padding: initial;
+        background-color: transparent;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .menu > .list{
+        flex-direction: row;
+    }
+
+    .screen-lg-hidden{
+        display: none;
+    }
+
+    .screen-sm-hidden{
+        display: block;
+    }
+
+    .sign-up-btn{
+        padding: 4px;
+    }
+
  /* Fancy button animation effect */
  .btn.fancy-border:hover::before{
     animation: animate_border .75s linear infinite
@@ -333,19 +402,6 @@ body.light-theme{
     to{
         transform:translateX(-50%)
     }
-}
-
-.featured-articles-container{
-    grid-template-columns: 1fr 40rem;
-}
-
-.trending-news-img-box{
-    width: 10rem;
-    height: 10rem;
-}
-
-.popular-tags-container{
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .footer-container{
@@ -362,9 +418,5 @@ body.light-theme{
 
 .copyright-notice{
     margin-top: auto;
-}
-
-.blog-post-data img{
-    height: 40rem;
 }
 
