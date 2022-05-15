@@ -392,6 +392,7 @@ body.light-theme{
     .sign-up-btn{
         padding: 4px;
     }
+}
 
  /* Fancy button animation effect */
  .btn.fancy-border:hover::before{
