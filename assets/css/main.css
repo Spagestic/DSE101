@@ -305,7 +305,7 @@ body.light-theme{
 /* image slider */
 .slider{
     position: relative;
-    background: var(--primary-background-color);
+    background: 000116;
     width: 100%;
     min-height: 500px;
     overflow: hidden;
@@ -320,7 +320,7 @@ body.light-theme{
   
   .slider .slide.active{
     clip-path: circle(150% at 0 50%);
-    transition: .1s;
+    transition: .0001s;
   }
   
   .slider .slide img{
@@ -336,7 +336,7 @@ body.light-theme{
     align-items: center;
     justify-content: space-between;
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity 0.1s ease;
   }
   
   .slider:hover .navigation{
@@ -346,7 +346,7 @@ body.light-theme{
   .prev-btn, .next-btn{
     z-index: 999;
     font-size: 2em;
-    color: var(--primary-background-color);
+    color: 222;
     background: rgba(255, 255, 255, 0.8);
     padding: 25px;
     cursor: pointer;
@@ -370,7 +370,7 @@ body.light-theme{
   
   .navigation-visibility .slide-icon{
     z-index: 999;
-    background: var(--light-color-alt);
+    background: rgba(255, 255, 255, 0.5);
     width: 20px;
     height: 10px;
     transform: translateY(-50px);
