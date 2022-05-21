@@ -8,4 +8,4 @@
 
 2.  the slider buttons' arrows have disappeared.
 
-3. the navigation bar becomes large when the page is switched to light theme.
+3.  the navigation covers part of the content on pages.
