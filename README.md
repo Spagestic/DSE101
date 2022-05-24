@@ -9,3 +9,5 @@
 2.  the slider buttons' arrows have disappeared.
 
 3.  the navigation covers part of the content on pages.
+
+4.  need to format the maths page

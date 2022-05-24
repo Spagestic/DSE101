@@ -1,4 +1,25 @@
 .content{
     justify-content: center;
     display: flex;
+    overflow: hidden;
+}
+
+.content ul{
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.content ul li{
+    float:none;
+    margin: 0rem 4rem 2rem 0rem;
+}
+
+#book{
+border: 20px;
+border-color: var(--light-color);
+}
+
+h3{
+   text-decoration: underline;
+   padding-bottom: 1px;
 }
