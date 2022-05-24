@@ -230,6 +230,10 @@ body.light-theme{
     display: block;
 }
 
+ul li ul{
+display: none;
+}
+
 /* Search */
 .search-form-container{
     width: 100%;

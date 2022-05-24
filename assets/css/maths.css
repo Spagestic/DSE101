@@ -1,1 +1,4 @@
-/* Subject nav bar */
+.content{
+    justify-content: center;
+    display: flex;
+}
