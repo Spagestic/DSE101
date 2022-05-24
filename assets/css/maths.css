@@ -1,7 +1,7 @@
 .content{
     justify-content: center;
     display: flex;
-    overflow: hidden;
+    overflow:auto;
 }
 
 .content ul{
@@ -11,15 +11,19 @@
 
 .content ul li{
     float:none;
-    margin: 0rem 4rem 2rem 0rem;
+    justify-content: center;
+    margin: 0rem 1rem 2rem 0rem;
 }
 
 #book{
-border: 20px;
-border-color: var(--light-color);
+    justify-content: center;
+    padding: 1rem;
 }
 
 h3{
-   text-decoration: underline;
    padding-bottom: 1px;
+}
+
+.book-name{
+    text-decoration: underline;
 }
