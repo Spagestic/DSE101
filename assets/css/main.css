@@ -390,11 +390,15 @@ body.light-theme{
   }
 r { animation-play-state: paused; }
 
+
+
 /* Subject nac bar */
 .subjects{
     font-size: var(--font-size-md);
     color: var(--light-color);
 }
+
+
 
 /* Footer */
 .footer{
