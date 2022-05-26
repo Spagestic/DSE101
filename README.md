@@ -10,4 +10,4 @@
 
 3.  the navigation covers part of the content on pages.
 
-4.  need to format the maths page
+4.  the slider buttons' z-index is higher than the nav bar.
