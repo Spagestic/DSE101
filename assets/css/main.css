@@ -203,6 +203,14 @@ body.light-theme{
     z-index: 5;
 } */
 
+.fancy-border span{
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    background-color: var(--secondary-background-color);
+    padding: .6rem 1.5rem;
+}
+
 
 /* Header JavaScript Styles */
 .header.activated{
@@ -490,6 +498,10 @@ r { animation-play-state: paused; }
 
     .screen-sm-hidden{
         display: block;
+    }
+
+    .sign-up-btn{
+        padding: 4px;
     }
 
 } 
