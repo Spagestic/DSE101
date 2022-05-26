@@ -500,10 +500,6 @@ r { animation-play-state: paused; }
         display: block;
     }
 
-    .sign-up-btn{
-        padding: 4px;
-    }
-
 } 
 
  /* Fancy button animation effect */
