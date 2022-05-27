@@ -105,19 +105,19 @@ body.light-theme{
     flex-shrink: 1;
 } 
 */
- .content DL{
+ /* .content DL{
     padding: 1rem;
     margin: 0rem;
-}
+} */
 
-H3{
+/* H3{
   padding-top: 1rem;  
   text-decoration: underline;
-}
+} */
 
-DL DL DT{
+/* DL DL DT{
     padding-left: .75rem;
-}
+} */
 /*
 .content DL DT{
     float:none;
