@@ -74,7 +74,7 @@ i{
     font-size: var(--font-size-md);
 }
 /* Theme color change */
-body.light-theme{
+/* body.light-theme{
     --light-color: #3d3d3d;
     --light-color-alt: rgba(0,0,0,.6);
     --primary-background-color: #fff;
@@ -82,7 +82,7 @@ body.light-theme{
     --hover-light-color: #fff;
     --transparent-dark-color: var(--secondary-background-color);
     --transparent-light-color: rgba(0,0,0,.1);
-}
+} */
 /* Reusable classes */
 .container{
     max-width: 160rem;
@@ -236,7 +236,7 @@ display: none;
 }
 
 /* Search */
-.search-form-container{
+/* .search-form-container{
     width: 100%;
     max-width: 100%;
     height: 100vh;
@@ -249,50 +249,50 @@ display: none;
     opacity: 0;
     transform: scale(0);
     transition: opacity .5s;
-}
+} */
 
-.form-container-inner{
+/* .form-container-inner{
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: var(--gap);
     text-align: center;
-}
+} */
 
-.form{
+/* .form{
     display: flex;
     justify-content: center;
-}
+} */
 
-.form-input,
+/* .form-input,
 .form-btn{
     display: inline-block;
     outline: none;
     border: 2px solid var(--secondary-background-color);
     padding: 1.5rem;
     color: var(--light-color-alt);
-}
+} */
 
-.form-input{
+/* .form-input{
     border-right: none;
     width: 100%;
     background-color: var(--primary-background-color);
-}
+} */
 
-.form-btn{
+/* .form-btn{
     margin-left: -.5rem;
     border-left: none;
     background-color: var(--secondary-background-color);
     text-transform: uppercase;
     width: 8rem;
-}
+} */
 
-.form-note{
+/* .form-note{
     font-size: var(--font-size-xsm);
     align-self: flex-end;
-}
+} */
 
-.form-close-btn{
+/* .form-close-btn{
     position: absolute;
     top: 1.5rem;
     right: 1.5rem;
@@ -300,13 +300,13 @@ display: none;
     width: 4rem;
     height: 4rem;
     display: flex;
-}
+} */
 
 /* Form JavaScript styles */
-.search-form-container.activated{
+/* .search-form-container.activated{
     opacity: 1;
     transform: scale(1);
-}
+} */
 /* image slider */
 .slider{
     position: relative;
@@ -396,15 +396,6 @@ display: none;
 r { animation-play-state: paused; }
 
 
-
-/* Subject nac bar */
-.subjects{
-    font-size: var(--font-size-md);
-    color: var(--light-color);
-}
-
-
-
 /* Footer */
 .footer{
     background-color: var(--secondary-background-color);
@@ -478,9 +469,10 @@ r { animation-play-state: paused; }
     } 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1050px) {
     .menu{
         position: static;
+        margin-left: -2em;
         width: initial;
         padding: initial;
         background-color: transparent;
