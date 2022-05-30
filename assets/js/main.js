@@ -133,13 +133,13 @@ var repeater = () => {
 repeater();
 
 //stop the image slider autoplay on mouseover
-slider.addEventListener("mouseover", () => {
-  clearInterval(playSlider);
-});
+// slider.addEventListener("mouseover", () => {
+//   clearInterval(playSlider);
+// });
 
 //start the image slider autoplay again on mouseout
-slider.addEventListener("mouseout", () => {
-  repeater();
-});
+// slider.addEventListener("mouseout", () => {
+//   repeater();
+// });
 
 
