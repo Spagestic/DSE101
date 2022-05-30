@@ -105,6 +105,10 @@ i{
     flex-shrink: 1;
 } 
 */
+.content{
+    padding-top: 4.1rem;
+}
+
  .content DL{
     padding: 1rem;
     margin: 0rem;
