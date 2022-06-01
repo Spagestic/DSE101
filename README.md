@@ -1,5 +1,7 @@
 ﻿# DSE101
 
+Visitable at Dse101.netlify.app
+
 !!! bugs to fix !!!
 
 1.  when the page loads/refreshes,

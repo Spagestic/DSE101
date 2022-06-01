@@ -17,27 +17,51 @@ const scrollHeader = () =>{
 
 window.addEventListener('scroll', scrollHeader);
 
-// Open menu & search pop-up
-const menuToggleIcon = selectElement('#menu-toggle-icon');
-const formOpenBtn = selectElement('#search-icon');
-const formCloseBtn = selectElement('#form-close-btn');
-const searchContainer = selectElement('#search-form-container');
+// Header // 
+// Open menu 
+const primaryNav = document.querySelector(".primary-navbar");
+const navToggle = document.querySelector(".menu-toggle-icon")
 
-const toggleMenu = () =>{
-    const mobileMenu = selectElement('#menu');
-    mobileMenu.classList.toggle('activated');
-    menuToggleIcon.classList.toggle('activated');
+navToggle.addEventListener('click', () =>{
+        const visibility = primaryNav.getAttribute('data-visible')
+        const aria_expanded = navToggle.getAttribute('aria-expanded')
+
+        // console.log(visibility);
+        // console.log(aria_expanded);
+
+        if (visibility === "false"){
+            primaryNav.setAttribute('data-visible', true)
+            navToggle.setAttribute('aria-expanded', true)
+        } else if (visibility === "true"){
+            primaryNav.setAttribute('data-visible', false)
+            navToggle.setAttribute('aria-expanded', false)
+        }
+        // console.log(visibility);
+        // console.log(aria_expanded);
 }
+);
 
-menuToggleIcon.addEventListener('click', toggleMenu);
+// Open menu & search pop-up
+// const menuToggleIcon = selectElement('#menu-toggle-icon');
+// const formOpenBtn = selectElement('#search-icon');
+// const formCloseBtn = selectElement('#form-close-btn');
+// const searchContainer = selectElement('#search-form-container');
+
+// const toggleMenu = () =>{
+//     const mobileMenu = selectElement('#menu');
+//     mobileMenu.classList.toggle('activated');
+//     menuToggleIcon.classList.toggle('activated');
+// }
+
+// menuToggleIcon.addEventListener('click', toggleMenu);
 
 // Open/Close search form popup
-formOpenBtn.addEventListener('click', () => searchContainer.classList.add('activated'));
-formCloseBtn.addEventListener('click', () => searchContainer.classList.remove('activated'));
+// formOpenBtn.addEventListener('click', () => searchContainer.classList.add('activated'));
+// formCloseBtn.addEventListener('click', () => searchContainer.classList.remove('activated'));
 // -- Close the search form popup on ESC keypress
-window.addEventListener('keyup', (event) => {
-    if(event.key === 'Escape') searchContainer.classList.remove('activated');
-});
+// window.addEventListener('keyup', (event) => {
+//     if(event.key === 'Escape') searchContainer.classList.remove('activated');
+// });
 
 // Switch theme/add to local storage
 const body = document.body;

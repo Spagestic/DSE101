@@ -134,7 +134,7 @@ i{
     color: var(--light-color);
 }
 
-.menu{
+/* .menu{
     position: absolute;
     top: 8.5rem;
     right: 1.5rem;
@@ -144,7 +144,7 @@ i{
     opacity: 0;
     transform: scale(0);
     transition: opacity .25s ease-in;  
-}
+} */
 
 .list{
     display: flex;
@@ -168,13 +168,78 @@ i{
     cursor: pointer;
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.5rem;
+}
+
+.primary-navbar{
+  display:flex;
+    gap: var(--gap);
+  list-style:none;
+}
+
+.menu-toggle-icon{
+    display: none;
+}
+
+/* button hover effect */
 .list-link:hover,
 .btn:hover,
 .btn:hover span{
     color: var(--light-color);
 }
 
-.moon-icon{
+@media screen and (max-width : 70em){
+    .primary-navbar{
+      z-index: 9999;
+      position: fixed;
+      inset: 0 0 0 35%;
+      padding: min(30vh, 10rem) 2em;
+      gap: 1.5rem;
+      
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      background: hsl(224 10% 14% / .8);
+      
+      transform: translateX(100%);
+      transition: transform 300ms ease-out;
+    }
+    
+    @supports (backdrop-filter: blur(3rem)){
+      .primary-navbar{
+      backdrop-filter: blur(2.5rem);
+    }
+  }
+  
+  .primary-navbar[data-visible="true"]{
+      transform: translateX(0%);
+  }
+  
+  .menu-toggle-icon{
+      display: block;
+      position: relative;
+      z-index: 99999;
+  }
+  
+  .menu-toggle-icon[aria-expanded="false"] .close-menu-icon{
+      display: none;
+  }
+
+  .menu-toggle-icon[aria-expanded="true"] .close-menu-icon{
+    display: block;
+}
+  
+  .menu-toggle-icon[aria-expanded="true"] .open-menu-icon{
+      display: none;
+  }
+  }
+
+/* .moon-icon{
     display: none;
 }
 
@@ -184,7 +249,7 @@ i{
 
 .light-theme .moon-icon{
     display: block;
-}
+} */
 
 /* .fancy-border{
     position: relative;
@@ -469,7 +534,7 @@ r { animation-play-state: paused; }
     } 
 }
 
-@media screen and (min-width: 1050px) {
+/* @media screen and (min-width: 1050px) {
     .menu{
         position: static;
         margin-left: -2em;
@@ -492,7 +557,7 @@ r { animation-play-state: paused; }
         display: block;
     }
 
-} 
+}  */
 
  /* Fancy button animation effect */
 
