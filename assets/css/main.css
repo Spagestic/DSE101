@@ -405,16 +405,16 @@ display: none;
     object-fit: cover;
   }
 
-  .slider .slide img:hover{
+  /* .slider .slide img:hover{
       opacity: .84;
-  }
+  } */
   
   .navigation{
     height: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    opacity: 0;
+    opacity: 0.4;
     transition: opacity 0.1s ease;
   }
   
@@ -469,9 +469,9 @@ display: none;
     .slider{
       width: 100%;
     }
-    .navigation{
+    /* .navigation{
         opacity: .5;
-    }
+    } */
   }
 r { animation-play-state: paused; }
 
