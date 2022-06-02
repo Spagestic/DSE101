@@ -65,10 +65,36 @@ button {
   outline: none;
 }
 
+/* icons */
 i{
     font-size: var(--font-size-md);
     padding: 1rem;
 }
+
+/* hover effect on links & buttons*/
+.list-link:hover,
+.btn:hover,
+.btn:hover span{
+    color: var(--light-color);
+}
+
+
+/* Reusable classes */
+.container{
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.d-grid{
+    display: grid;
+}
+
+.logo{
+    font-size: var(--font-size-md);
+    color: var(--light-color);
+}
+
 
 /* header */
 .header{
@@ -97,6 +123,7 @@ i{
     display: none;
 }
 
+/* menu on smaller screens */
 @media (max-width : 63em){
   .primary-navbar{
     z-index: 9999;
@@ -141,9 +168,96 @@ i{
 
 }
 
-/* hover effect */
-.list-link:hover,
-.btn:hover,
-.btn:hover span{
-    color: var(--light-color);
+/* footer */
+.footer{
+    background-color: var(--secondary-background-color);
+    padding: 2rem 0rem;
+}
+
+.footer-container{
+    gap: var(--gap);
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-title{
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    /* text-decoration: underline; */
+    margin-bottom: var(--margin-sm);
+}
+
+.footer-list{
+    flex-direction: column;
+    gap: var(--gap);
+    /* align-items: flex-start; */
+}
+
+.footer-list li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 2rem;
+}
+
+.footer-col ul li a{
+    transition: all .05s ease;
+}
+
+.footer-list a:hover {
+    padding-left: 3px;;
+}
+
+.company-data{
+    display: flex;
+    flex-direction: column;
+    order: 1; 
+    /* flex-wrap: wrap; */
+}
+
+/* @media screen and (max-width: 500px) {
+    .company-data{
+        grid-column: span 3;
+        padding-top: 1rem;
+    } 
+} */
+
+.company-description{
+    margin-block: var(--margin-sm);
+    /* max-width: 75%; */
+    /* flex-wrap: wrap; */
+}
+
+.social-media{
+    margin-bottom: var(--margin-md);
+    display: flex;
+}
+
+.copyright-notice{
+    opacity: .8;
+    margin-top: auto;
+}
+
+/* .footer-container{
+    grid-template-columns: repeat(3, 1fr);
+} */
+
+@media screen and (max-width: 65em){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 25em){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
 }
