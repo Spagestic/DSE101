@@ -68,6 +68,7 @@
   }
 
   .swiper-button-prev, .swiper-button-next {
+    padding-top: 37px;
     padding: auto;
   }
 
