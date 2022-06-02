@@ -7,6 +7,11 @@
     <title>DSE 101 | Past Papers</title>
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- image slider buttons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/swiper.css">
     <!-- Custom styles -->
     <link rel="stylesheet" href="./assets/css/pp.css">
 </head>
@@ -100,9 +105,34 @@
     </div>
 
     <!-- content -->
-    <br><br><br>
-    
-    <br><br><br>
+    <br><br>
+
+     <!-- image slider -->
+
+     <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><a href="maths.html">Maths</a></div>
+          <div class="swiper-slide"><a href="m1.html">M1</a></div>
+          <div class="swiper-slide"><a href="m2.html">M2</a></div>
+          <div class="swiper-slide"><a href="phy.html">Physics</a></div>
+          <div class="swiper-slide"><a href="chem.html">Chemistry</a></div>
+          <div class="swiper-slide"><a href="bio.html">Biology</a></div>
+          <div class="swiper-slide"><a href="bafs.html">BAFS</a></div>
+          <div class="swiper-slide"><a href="econ.html">Economics</a></div>
+        </div>
+ 
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
 
         <!-- Footer -->
         <footer class="footer section">
@@ -208,6 +238,8 @@
 
  <!-- Custom script -->
  <script src="./assets/js/main.js"></script>
+ <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ <script src="./assets/js/swiper.js"></script>
 
 </body>
 </html>
