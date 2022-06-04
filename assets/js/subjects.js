@@ -1,3 +1,4 @@
+// Accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -16,3 +17,20 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+//reminder
+// Open menu 
+const reminder = document.querySelector(".reminder");
+const reminderToggle = document.querySelector(".reminder-closebtn")
+
+reminderToggle.addEventListener('click', () =>{
+        const reminder_visibility = reminder.getAttribute('reminder-data-visible')
+
+        // console.log(reminder_visibility);
+
+        if (reminder_visibility === "true"){
+            reminder.setAttribute('reminder-data-visible', false)
+        }
+        // console.log(reminder_visibility);
+}
+);
