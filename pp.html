@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSE 101 | Past Papers</title>
+    <title>DSE 101 | PP</title>
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- image slider buttons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./assets/css/swiper.css">
     <!-- Custom styles -->
-    <link rel="stylesheet" href="./assets/css/pp.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/accordion.css">
 </head>
 
 <body>
@@ -28,7 +24,7 @@
             <div class="menu" id="menu">
                 <ul class="primary-navbar" id="primary-navbar" data-visible="false">
                     <li class="list-item">
-                        <a href="index.html" class="list-link">Home</a>
+                        <a href="index.html" class="list-link current">Home</a>
                     </li>
                     <li class="list-item">
                         <a href="maths.html" class="list-link">Maths</a>
@@ -55,7 +51,7 @@
                         <a href="econ.html" class="list-link">Economics</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link current">Past Papers</a>
+                        <a href="#" class="list-link">Past Papers</a>
                     </li>
                     <li class="list-item">
                         <a href="#" class="list-link">Contact</a>
@@ -84,162 +80,160 @@
 
     </header>
 
-    <!-- Search -->
-    <div class="search-form-container container" id="search-form-container">
+    <br><br><br>
+    <div class="content">
 
-        <div class="form-container-inner">
-
-           <!-- <form action="" class="form">
-                <input class="form-input" type="text" placeholder="What are you looking for?">
-                 <button class="btn form-btn" type="submit">
-                    <i class="ri-search-line"></i>
-                </button> 
-            </form>
-             <span class="form-note">Or press ESC to close.</span> -->
-
+        <button class="accordion">Maths</button>
+        <div class="panel">
+            <a href="">until 2017</a>
         </div>
-
-        <button class="btn form-close-btn place-items-center" id="form-close-btn">
-            <!-- <i class="ri-close-line"></i> -->
-        </button>
+        
+        <button class="accordion">M1</button>
+        <div class="panel">
+            <a href="">until 2017</a>
+        </div>
+        
+        <button class="accordion">M2</button>
+        <div class="panel">
+            <a href="">until 2017</a>
+        </div>
+        
+        <button class="accordion">Physics</button>
+        <div class="panel">
+            <a href="">until 2017</a>
+        </div>
+        
+        <button class="accordion">Chemistry</button>
+        <div class="panel">
+            <a href="">until 2017</a>
+        </div>
+        
+        <button class="accordion">Biology</button>
+        <div class="panel">
+            <a href="">until 2017</a>
+        </div>
+        
+        <button class="accordion">Economics</button>
+        <div class="panel">
+            <a href="">until 2017</a>
+        </div>
+        
+        <button class="accordion">BAFS</button>
+        <div class="panel">
+            <a href="">until 2017</a>
+        </div>
+        
     </div>
 
-    <!-- content -->
-    <br><br>
+    <!-- Footer -->
+    <footer class="footer section">
 
-     <!-- image slider -->
-
-     <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><a href="maths.html">Maths</a></div>
-          <div class="swiper-slide"><a href="m1.html">M1</a></div>
-          <div class="swiper-slide"><a href="m2.html">M2</a></div>
-          <div class="swiper-slide"><a href="phy.html">Physics</a></div>
-          <div class="swiper-slide"><a href="chem.html">Chemistry</a></div>
-          <div class="swiper-slide"><a href="bio.html">Biology</a></div>
-          <div class="swiper-slide"><a href="bafs.html">BAFS</a></div>
-          <div class="swiper-slide"><a href="econ.html">Economics</a></div>
-        </div>
- 
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-
-        <!-- Footer -->
-        <footer class="footer section">
-
-            <div class="footer-container container">
-            <div class="row">
-
-                <div class="company-data footer-col">
-                    <a href="./index.html">
-                        <h2 class="logo">DSE 101</h2>
-                    </a>
-                    <p class="company-description">We aim to lead HKDSE students to the useful resources on the Internet all from this one website.</p>
-                    
-                    <ul class="list social-media">
-                        <li class="list-item">
-                            <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link"><i class="ri-discord-line"></i></a>
-                        </li>
-                    </ul>
-    
-                    <span class="copyright-notice">&copy;2022 DSE 101. All rights reserved.</span>
-                </div>
-    
-                <div class="footer-col">
-                    <h6 class="title footer-title">Subjects</h6>
-                    
-                    <ul class="footer-list list">
-                        <li class="list-item">
-                            <a href="maths.html" class="list-link">Maths</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">M1</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">M2</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">Physics</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="chem.html" class="list-link">Chemistry</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="bio.html" class="list-link">Biology</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">BAFS</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="econ.html" class="list-link">Economics</a>
-                        </li>
-                    </ul>
-    
-                </div>
-    
-                <div class="footer-col">
-                    <h6 class="title footer-title">Useful links</h6>
-                    
-                    <ul class="footer-list list">
-                        <li class="list-item">
-                            <a href="index.html" class="list-link">Home</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">Past Papers</a>
-                        </li>
-                    </ul>
-    
-                </div>
-    
-                <div class="footer-col">
-                    <h6 class="title footer-title">Website</h6>
-                    
-                    <ul class="footer-list list">
-                        <li class="list-item">
-                            <a href="#" class="list-link">Contact us</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">F.A.Q</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">Careers</a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-link">Authors</a>
-                        </li>
-                        </li>
-                    </ul>
-    
-                </div>
-
-            </div> 
-            </div>
+        <div class="footer-container container d-grid">
             
-        </footer>
+            <div class="company-data footer-col">
+                <a href="./index.html">
+                    <h2 class="logo">DSE 101</h2>
+                </a>
+                <p class="company-description">We aim to lead HKDSE students to the useful resources on the Internet all from this one website.</p>
+                
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link"><i class="ri-discord-line"></i></a>
+                    </li>
+                </ul>
+
+                <span class="copyright-notice">&copy;2022 DSE 101. All rights reserved.</span>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Subjects</h6>
+                
+                <ul class="footer-list list footer-col">
+                    <li class="list-item">
+                        <a href="maths.html" class="list-link">Maths</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">M1</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">M2</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Physics</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="chem.html" class="list-link">Chemistry</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="bio.html" class="list-link">Biology</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">BAFS</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="econ.html" class="list-link">Economics</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Useful links</h6>
+                
+                <ul class="footer-list list footer-col">
+                    <li class="list-item">
+                        <a href="index.html" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Past Papers</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://www.dsepp.com" class="list-link">DSEPP</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="http://dse00.blogspot.com" class="list-link">DSE00</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Website</h6>
+                
+                <ul class="footer-list list ">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">F.A.Q</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Careers</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Authors</a>
+                    </li>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+        
+    </footer>
 
  <!-- Custom script -->
  <script src="./assets/js/main.js"></script>
- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
- <script src="./assets/js/swiper.js"></script>
+ <script src="/assets/js/accordion.js"></script>
 
 </body>
 </html>
