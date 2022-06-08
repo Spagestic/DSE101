@@ -493,3 +493,55 @@ display: none;
 
 }  */
 
+  /* reminder */
+  .reminder {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    max-width: 45rem;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: hsl(224 10% 14% / .99);
+    color: var(--light-color);
+    border: 2px;
+    border-radius: 1rem;
+    border-color: var(--secondary-background-color);
+    padding: 1.5rem 1.5rem;
+    color: inherit;
+    transform: translateX(0%);
+    transition: transform 500ms ease-in;
+  }
+
+  @supports (backdrop-filter: blur(3rem)){
+    .reminder{
+      background: hsl(224 10% 12% / .6);
+      backdrop-filter: blur(2.5rem);
+  }
+}
+
+.reminder[reminder-data-visible="false"]{
+    transform: translateX(110%);
+}
+
+.reminder-top{
+    display: inline-flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+  .reminder-closebtn {
+    /* margin-left:auto; */
+    margin-top: -9px;
+    font-weight: bold;
+    
+    /* float: inline-start; */
+    /* float: right; */
+    font-size: 30px;
+    /* line-height: 20px; */
+    cursor: pointer;
+  }
+
+  .reminder-closebtn:hover {
+    color: var(--light-color);
+  }
