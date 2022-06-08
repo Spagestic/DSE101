@@ -214,3 +214,8 @@ DT > a:hover{
   .reminder-closebtn:hover {
     color: var(--light-color);
   }
+
+  /* Recommended text */
+#recommended-text{
+    color: gold;
+}
