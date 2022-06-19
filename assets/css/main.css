@@ -460,7 +460,7 @@ display: none;
     }
 } */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 535px) {
     .company-data{
         grid-column: span 3;
         /* grid-template-columns: auto auto auto; */
