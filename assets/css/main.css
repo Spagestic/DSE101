@@ -112,6 +112,20 @@ i{
     padding-block: 5rem
 } */
 
+.list{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.menu > .list{
+    flex-direction: column;
+}
+
+.btn{
+    cursor: pointer;
+}
+
 /* Header */
 .header{
     background-color: var(--secondary-background-color);
@@ -146,26 +160,12 @@ i{
     transition: opacity .25s ease-in;  
 } */
 
-.list{
-    display: flex;
-    align-items: center;
-    gap: var(--gap);
-}
-
-.menu > .list{
-    flex-direction: column;
-}
-
 .list-link.current{
     color: var(--light-color);
 }
 
 .close-menu-icon{
     display: none;
-}
-
-.btn{
-    cursor: pointer;
 }
 
 .navbar{
