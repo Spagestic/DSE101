@@ -545,3 +545,17 @@ display: none;
   .reminder-closebtn:hover {
     color: var(--light-color);
   }
+
+  .faq{
+    padding-top: 6.4rem;
+  }
+
+  .faq-header{
+    padding:1rem;
+    padding-left: 1.5rem;
+    text-decoration: underline;
+  }
+
+  .fav-how-to-use-website{
+    padding-left: 2rem;
+  }

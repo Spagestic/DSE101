@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSE 101 | Home</title>
+    <title>DSE 101 | FAQ</title>
     <!-- Remix icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- image slider buttons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./assets/css/swiper.css">
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+       <!-- Custom styles -->
+       <link rel="stylesheet" href="./assets/css/main.css">
+       <link rel="stylesheet" href="./assets/css/subjects.css">
+       <link rel="stylesheet" href="./assets/css/accordion.css">
+   
 </head>
 
 <body>
@@ -28,7 +26,7 @@
             <div class="menu" id="menu">
                 <ul class="primary-navbar" id="primary-navbar" data-visible="false">
                     <li class="list-item">
-                        <a href="index.html" class="list-link current">Home</a>
+                        <a href="index.html" class="list-link">Home</a>
                     </li>
                     <li class="list-item">
                         <a href="maths.html" class="list-link">Maths</a>
@@ -84,44 +82,42 @@
 
     </header>
 
-    <!-- swiper -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><a href="maths.html"><b>Maths</b></a></div>
-          <div class="swiper-slide"><a href="m1.html"><b>M1</b></a></div>
-          <div class="swiper-slide"><a href="m2.html"><b>M2</b></a></div>
-          <div class="swiper-slide"><a href="phy.html"><b>Physics</b></a></div>
-          <div class="swiper-slide"><a href="chem.html"><b>Chemistry</b></a></div>
-          <div class="swiper-slide"><a href="bio.html"><b>Biology</b></a></div>
-          <div class="swiper-slide"><a href="bafs.html"><b>BAFS</b></a></div>
-          <div class="swiper-slide"><a href="econ.html"><b>Economics</b></a></div>
-        </div>
- 
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
-      
-    <!-- reminder -->
-    <div class="container reminder" reminder-data-visible="true">
 
-        <div class="reminder-top">
-        <h4>Reminder!</h4>
-        <button class="reminder-closebtn" aria-controls="reminder">&times;</button>
+    <div class="faq">
+        <h1 class="faq-header">Frequently Asked Questions</h1>
+
+        <button class="accordion">How do I use this website?</button>
+        <div class="panel">
+            <div class="fav-how-to-use-website">
+                <ol>
+                    <li>Decide which subject you plan on studying.</li>
+                    <li>Go to that subject page.</li>
+                    <li>Decide which chapter you would like to learn or practice.</li>
+                    <li>Click on the link which looks relevent.</li>
+                    <li>Watch the video and go through Mr Herman Yueng's Playlist for more practice.</li>
+                </ol>
+            </div>
         </div>
 
-        <div class="reminder-text">
-        <p>After watching the first Herman Yueng's video, make sure to go through his playlist for more practice & doing past papers by topic.</p>
+        <button class="accordion">Can I ask for any support related to this website / homework / career / etc?</button>
+        <div class="panel">
+            <p>
+                Yes, for sure.<br>
+                Please feel free to contact us via discord or instagram, 
+                using the links at the bottom of this website. <br>
+                We would love to establish a community of HKDSE on discord, 
+                where they can openly ask for any support required to tackle HKDSE.
+            </p>
         </div>
 
+        <button class="accordion">Does this website own any of the content / videos that it links to?</button>
+        <div class="panel">
+            <p>
+                No, we do not own any of the content / videos that this website leads to.<br>
+                We only have listed and sorted the links found on the Internet here so students can access them with convenience.
+            </p>
+        </div>
+        
     </div>
 
     <!-- Footer -->
@@ -253,13 +249,10 @@
                     <li class="list-item">
                         <a href="https://discord.gg/6tAsC5uHxt" class="list-link">Contact</a>
                     </li>
-                    <li class="list-item">
+                     <li class="list-item">
                         <a href="faq.html" class="list-link">F.A.Q</a>
                     </li>
-                    <!-- <li class="list-item">
-                        <a href="#" class="list-link">F.A.Q</a>
-                    </li>
-                    <li class="list-item">
+                    <!--<li class="list-item">
                         <a href="#" class="list-link">Careers</a>
                     </li>
                     <li class="list-item">
@@ -276,8 +269,8 @@
 
  <!-- Custom script -->
  <script src="./assets/js/main.js"></script>
- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
- <script src="/assets/js/swiper.js"></script>
+ <script src="./assets/js/subjects.js"></script>
+ <script src="/assets/js/accordion.js"></script>
 
 </body>
 </html>
