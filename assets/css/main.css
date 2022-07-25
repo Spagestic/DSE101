@@ -563,159 +563,118 @@ display: none;
 
   /* Author page */
   .author{
-    padding: 8rem 2em 1.3rem 2em;
+    padding: 8rem 3em 1.3rem 3em;
   }
 
   .author-div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 95%;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1em 1fr;
+    grid-template-rows: 0fr .3fr .3fr .45fr .3fr .5fr .4fr 0fr;
   }
 
-  .author img{
+  .author-pic{
     height:auto;
-    width: 420px;
+    width: 40rem;
+    min-width: 16rem;;
     border-radius: 10%;
+    grid-column: 1;
+    grid-row: 1 / -1;
+    margin: 0rem 0em 0rem 0rem;
+    align-self: center;
+    justify-self: center;
   }
 
-  .author-txt{
-    width: 550px;
-    margin-left: 3rem;
-  }
-
-  .author-txt h1{
+  .author-h1{
     color: white;
-    font-size: 54px;
-    text-transform: capitalize;
-    margin-bottom: -.8rem;
+    font-size: 5.5rem;
+    /* background-color: gray; */
+    grid-column: 3;
+    grid-row: 4;
+    margin: 0 0 0 0;
+    align-self: end;
   }
 
-  .author-txt h3{
-    font-size: 25px;
-    text-transform: capitalize;
+  .author-h3{
+    font-size: 2.5rem;
     letter-spacing: 2px;
     padding-bottom: .5rem;
+    /* background-color: grey; */
+    grid-column: 3;
+    grid-row: 5;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 0 0 0 0;
+    align-self: center;
 }
 
-@media  screen and (max-width: 960px) {
-    .author-txt h1{
-        font-size: 44px;
-      }
-    
-      .author-txt h3{
-        font-size: 20px;
-      }
-
-      .author img{
-        width: 400px;
-      }
+.author-p{
+    /* background-color: grey; */
+    grid-column: 3;
+    grid-row: 6;
+    margin: 0 0 0 0;
+    align-self: baseline;
 }
 
-@media  screen and (max-width: 890px) {
-    .author-txt h1{
-        font-size: 40px;
-      }
-    
-      .author-txt h3{
-        font-size: 18px;
-      }
-
-      .author img{
-        width: 320px;
-      }
-}
-
-@media  screen and (max-width: 760px) {
+@media  screen and (max-width: 830px){
     .author{
-        padding: 8rem 1em 1.3rem 1em;
+        padding: 8rem 2em 1.3rem 2em;
       }
 
-      .author img{
-        width: 300px;
-      }
-
-      .author-txt h1{
-        font-size: 38px;
-      }
-      p{
-        font-size: 14px;
-      }
-}
-
-@media  screen and (max-width: 690px) {
-    .author{
-        padding: 8rem 1em 1.3rem 1em;
-      }
-
-      .author img{
-        width: 280px;
-      }
-
-      .author-txt h1{
-        font-size: 36px;
-      }
-
-      .author-txt h3{
-        font-size: 17px;
-      }
-
-      p{
-        font-size: 14px;
-      }
-}
-
-@media  screen and (max-width: 675px) {
-    .author{
-        padding: 8rem .6em 1.3rem .6em;
-      }
-
-      .author-txt{
-        width: 530px;
-        margin-left: 2rem;
-      }  
-
-      .author-txt h1{
-        font-size: 34px;
-        margin-bottom: -.7;
-      }
-
-      p{
-        font-size: 13px;
-      }
-
-      .author img{
-        width: 250px;
-      }
-}
-
-@media  screen and (max-width: 600px) {
-    .author-div{
-        display: grid;
-        min-width: auto;
-        grid-template-columns: repeat(auto-fit, 1fr);
-        align-items: center;
+    .author-pic{
+        width: 30rem;
     }
 
-    .author img{
+    .author-h1{
+        font-size: 4rem;
+    }
 
+    .author-h3{
+        font-size: 2rem;
+    }
+
+    .author-p{
+        justify-content: baseline;
+    }
+}
+
+@media  screen and (max-width: 640px) {
+    .author{
+        padding: 8rem 1em 0rem 1em;
       }
 
-      .author-txt{
-        
+    .author-div{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr 0fr;
+        gap: .15em;
+
+    }
+
+    .author-pic{
+        justify-self: center;
+        width: auto;
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0;
       }
 
-      .author-txt h1{
-
+      .author-h1{
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 3.6rem;
+        justify-self: center;
       }
     
-      .author-txt h3{
-
+      .author-h3{
+        grid-column: 1;
+        grid-row: 3;
+        font-size: 2rem;
+        justify-self: center;
       }
 
-      .author-txt p{
-
+      .author-p{
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: center;
+        padding-bottom: .4em;
       }
 }
