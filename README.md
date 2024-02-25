@@ -24,11 +24,3 @@ We welcome contributions from the community. If you'd like to contribute, please
 3. Make your changes and commit them: `git commit -m 'Add some feature'`.
 4. Push to the branch: `git push origin feature-name`.
 5. Open a Pull Request.
-
-## Contact and Support
-
-For any inquiries, suggestions, or feedback, please contact the project author or visit the [FAQ section](#faq) of our website.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
